@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.wrapper{
+    width : 100vw;
+    height : 100vh;
+    background-color: rgb(70, 69, 69);
+    color : white;
+    display: grid;
+    place-items : center;
+}
+
+.curr-ply-info{
+    color : white;
+    font-size : 1.1rem;
+    background-color: rgb(255, 255, 255, 0.15);
+    border: 1px solid rgb(255, 255, 255, 0.25);
+    border-radius : 1rem;
+    padding : 0.3rem 1.2rem;
+    position : absolute;
+    top : 3rem;
+    left : 50%;
+    transform : translateX(-50%);
+    letter-spacing: 3px;
+}
+
+.tic-tac-toe{
+    display : grid;
+    grid-template-columns : repeat(3, 1fr);
+    background-color : rgb(255, 255, 255, 0.15);
+    border : 1px solid rgb(255, 255, 255, 0.25);
+    border-radius : 0.5rem;
+    width : 100%;
+    max-width : 20rem;
+    padding : 2rem;
+    aspect-ratio : 1/1;
+}
+
+
+.box{
+    position : relative;
+    width : 100%;
+    color : white;
+    font-size : 3rem;
+    aspect-ratio: 1/1;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    cursor : pointer;
+}
+
+.box1, .box2, .box4, .box5{
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.box3, .box6{
+    border-bottom: 2px solid white;
+}
+
+.box7, .box8{
+    border-right: 2px solid white;
+}
+
+.btn{
+    color : white;
+    font-size : 1.2rem;
+    background-color : rgb(255, 255, 255, 0.15);
+    border: 1px solid rgb(255, 255, 255, 0.25);
+    border-radius : 0.5rem;
+    padding : 0.3rem 1.5rem;
+    letter-spacing: 3px;
+    position : absolute;
+    bottom : 3rem;
+    left  :50%;
+    transform : translateX(-50%);
+    cursor : pointer;
+    display : none;
+}
+
+.btn.active{
+    display : flex;
+}
+
+.win{
+    background-color : rgb(10, 156, 10);
+}
